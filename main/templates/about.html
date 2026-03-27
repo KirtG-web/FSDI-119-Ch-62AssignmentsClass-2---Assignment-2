@@ -5,36 +5,88 @@
 {% block content %}
 <section class="about-section">
 
-<h2>{% trans "About Hungary" %}</h2>
+<h1>{% trans "Facts about Hungary" %}</h1>
 
-<p>{% trans "Hungary has a rich history and vibrant culture." %}</p>
+<ul>
+    <li>{% trans "Official Name: Hungary" %}</li>
+    <li>{% trans "Form of Government: Parliamentary republic" %}</li>
+    <li>{% trans "Capital: Budapest" %}</li>
+    <li>{% trans "Population: 9,825,704" %}</li>
+    <li>{% trans "Official Language: Hungarian" %}</li>
+    <li>{% trans "Currency: Forint" %}</li>
+    <li>{% trans "Area: 35,919 square miles (93,030 square kilometers)" %}</li>
+    <li>{% trans "Major Mountain Ranges: North Hungarian, Transdanubian" %}</li>
+    <li>{% trans "Major Rivers: Danube, Tisza, Drava, Raba" %}</li>
+</ul>
+
+<h3>{% trans "Geography of Hungary" %}</h3>
 
 <p>
-{% trans "Hungary has a long and complex history, influenced by various cultures and empires. It has been home to the Magyars since the 9th century and has seen periods of Ottoman, Habsburg, and Soviet influence." %}
+{% blocktrans %}
+Roughly the size of the state of Indiana, Hungary is a landlocked country in Central Europe bordered by Slovakia and Austria to the north, Ukraine and Romania to the east, Slovenia to the west, and Croatia and Serbia to the south.
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+Hungary is mostly flat, with a vast lowland area known as the Great Hungarian Plain, a productive agricultural region.
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+The Danube River runs through the middle of the country and is Hungary’s largest river. It flows for nearly 1,800 miles (2,900 kilometers), passing through 10 nations on its way to the Black Sea.
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+Hungary also contains three major freshwater lakes, including Lake Balaton, the largest lake in Central Europe. Lake Hévíz is also notable as one of the largest thermal lakes in the world.
+{% endblocktrans %}
+</p>
+
+<h2>{% trans "About Hungary" %}</h2>
+
+<p>
+{% blocktrans %}
+Hungary has a rich history and vibrant culture.
+{% endblocktrans %}
+</p>
+
+<p>
+{% blocktrans %}
+Hungary has a long and complex history, influenced by various cultures and empires. It has been home to the Magyars since the 9th century and has seen periods of Ottoman, Habsburg, and Soviet influence.
+{% endblocktrans %}
 <br>
-{% trans "Learn more in our History section." %}
+<a href="{% url 'history' %}">{% trans "Learn more in our History section." %}</a>
 </p>
 
 <h3>{% trans "Language" %}</h3>
 
 <p>
-{% trans "Hungarian (Magyar) is the official language of Hungary. It is a unique language belonging to the Uralic language family and is not closely related to other European languages." %}
+{% blocktrans %}
+Hungarian (Magyar) is the official language of Hungary. It is a unique language belonging to the Uralic language family and is not closely related to other European languages.
+{% endblocktrans %}
 <br>
-{% trans "Want to learn more? Check out our Language page." %}
+<a href="{% url 'language' %}">{% trans "Want to learn more? Check out our Language page." %}</a>
 </p>
 
 <h3>{% trans "Cultural Identity" %}</h3>
 
 <p>
-{% trans "Hungarians take great pride in their cultural heritage, which includes traditional music, dance, cuisine, and festivals. The country is known for its vibrant folk traditions and contributions to art and literature." %}
+{% blocktrans %}
+Hungarians take great pride in their cultural heritage, which includes traditional music, dance, cuisine, and festivals.
+{% endblocktrans %}
 <br>
-{% trans "Explore Culture & Traditions and view our Gallery." %}
+<a href="{% url 'culture' %}">{% trans "Explore Culture & Traditions" %}</a>
 </p>
 
 <h3>{% trans "Cuisine & Traditions" %}</h3>
 
 <p>
-{% trans "Discover traditional Hungarian dishes in our Food section and learn about celebrations in Holidays. Explore iconic Landmarks as well." %}
+{% blocktrans %}
+Discover traditional Hungarian dishes and learn about celebrations and landmarks across the country.
+{% endblocktrans %}
 </p>
 
 </section>
